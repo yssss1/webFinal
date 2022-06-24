@@ -1,0 +1,32 @@
+/* 设置表单属性 */
+form {
+    display: table;
+    padding: 10px;
+    background-color: gainsboro;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  
+  /* 设置表单二级标题的属性 */
+  .test {
+    font-size: 15px;
+  }
+  
+  /* 设置表单行的属性 */
+  .tableRow {
+    /* 作为表格行显示 */
+    display: table-row;
+  }
+  
+  /* 设置表单行内元素的属性 */
+  .tableRow p {
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  /* 使表单文字右对齐 */
+  .tableRow p:first-child {
+    text-align: left;
+  }

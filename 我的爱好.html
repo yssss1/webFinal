@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的爱好</title>
+
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/我的家乡.css">
+    <link type="text/css" rel="stylesheet" href="css/我的爱好.css">
+</head>
+<body>
+    <nav>
+        <div class="inner">
+            <div class="logo">
+                <img src="images/logo.jpg">
+            </div>
+
+            <span class = "Welcome">我的爱好方面</span>
+    
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="学生工作.html" target="_blank">
+                        学生工作
+                    </a>
+                </li>
+                <li>
+                    <a href="我的家乡.html" target="_blank">
+                        我的家乡
+                    </a>
+                </li>
+                <li>
+                    <a href="我的爱好.html" target="_blank">
+                        我的爱好
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <header>
+            <img src="images/header.jpg" alt="主页照片" >
+        
+        </header>
+
+        <!-- 一个总的大块包含所有块，采用凝胶布局 -->
+        <div class="container">
+            <!-- 定义小块，小块则分为上半部图片区和下半部文字区 -->
+            <div class = "container_block">
+                <div class="container_block_title">
+                    <h2>篮球</h2>
+                </div>
+
+                <div class="container_block_up">
+                    <img src="images/篮球赛.jpg" alt="篮球赛">
+                </div>
+
+                <div class="container_block_down">
+                    <p>
+                        我最喜欢的运动便是打篮球了，我也是学院篮球队的一员，并在新生杯中作为首发队员拿到了校第三名的好成绩。篮球对我来说意味着
+                        热爱，是我真正无法割舍的爱好。图中所示的便是我们大一时打班赛的场景。
+                    </p>
+                </div>
+            </div>
+
+            <div class = "container_block">
+                <div class="container_block_title">
+                    <h2>辩论</h2>
+                </div>
+
+                <div class="container_block_up">
+                    <img src="images/辩论队.jpg" alt="辩论队">
+                </div>
+
+                <div class="container_block_down">
+                    <p>
+                        辩论是我来到大学之后才接触到的，平时只是在电视上看到双方辩论，唇枪舌剑来回交锋，感到非常厉害与向往。在大学终于有机会亲自
+                        体验辩论带给我们的乐趣，和电视上看到的真的非常不一样。现在我也是学院辩论队的副队长，培养大一的新鲜血液。                    </p>
+                </div>
+            </div>
+
+            <!-- 最后一列因为与其他列的右外边距不同，所以需要重新定义 -->
+            <div class = "container_block_last">
+                <div class="container_block_title">
+                    <h2>和我分享你的兴趣爱好</h2>
+                </div>
+
+                <form action="https://www.zhihu.com/question/34777294" method="post">
+                    <h2 class="test">关于你的兴趣爱好</h2>
+                    <div class="tableRow">
+                        <p>
+                            姓名：
+                        </p>
+                        <p>
+                            <!-- 规定input元素类型为文本字段,且必须填写 -->
+                            <input type="text" name="name" value="" placeholder="请输入姓名" required>
+                        </p>
+                    </div>
+                    <div class="tableRow">
+                        <p>
+                            性别：
+                        </p>
+                        <p>
+                            <!-- 规定input元素类型为单选按钮 -->
+                            <input type="radio" name="sex" value="man" required> 男
+                            <input type="radio" name="sex" value="woman" required> 女
+                        </p>
+                    </div>
+                    <div class="tableRow">
+                        <p>
+                            年龄：
+                        </p>
+                        <p>
+                            <input type="text" name="age" value="" placeholder="请输入年龄" required>
+                        </p>
+                    </div>
+                    <div class="tableRow">
+                        <p>
+                            是否有自己的兴趣爱好：
+                        </p>
+                        <p>
+                            <!-- 规定input元素类型为单选按钮 -->
+                            <input type="radio" name="choice" value="" required> 是
+                            <input type="radio" name="choice" value="" required>否
+                        </p>
+                    </div>
+                    <div class="tableRow">
+                        <p>
+                            最喜欢的兴趣爱好类型：
+                        </p>
+                        <p>
+                            <!-- 创建下拉菜单框 -->
+                            <select name="兴趣爱好类型" >
+                                <option value="运动">运动</option>
+                                <option value="阅读">阅读</option>
+                                <option value="绘画">绘画</option>
+                                <option value="歌舞">歌舞</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div class="tableRow">
+                        <p>
+                            通过兴趣爱好你获得了什么？/为什么你没有自己的兴趣爱好：
+                        </p>
+                        <p>
+                            <!-- 定义多行文本输入控件,同时强制其高度为50px,宽度为50px -->
+                            <textarea style="min-height: 50px;min-width: 50px;max-height: 100px; max-width: 100px;"
+                                name="hobby"></textarea>
+                        </p>
+                    </div>
+                    <div class="tableRow">
+                        <p></p>
+                        <!-- 提交按钮,点击后跳转至知乎界面——“为什么在大学一定要有自己的兴趣爱好？” -->
+                        <p> <input type="submit" value="提交"> </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

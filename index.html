@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- nav为导航栏，其他几个页面相同 -->
+    <nav>
+        <!-- inner类定义凝胶布局 -->
+        <div class="inner"> 
+            <!-- 此类用于定义导航栏中的图标 -->
+            <div class="logo">
+                <img src="images/logo.jpg">
+            </div>
+            
+            <span class = "Welcome">杨硕的网站首页</span>
+            <!-- 导航栏选项用列表装入 -->
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="学生工作.html" target="_blank">
+                        学生工作
+                    </a>
+                </li>
+                <li>
+                    <a href="我的家乡.html" target="_blank">
+                        我的家乡
+                    </a>
+                </li>
+                <li>
+                    <a href="我的爱好.html" target="_blank">
+                        我的爱好
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- main类代表整个页面的主体部分 -->
+    <div class="main">
+        <!-- 页眉 -->
+        <header>
+            <img src="images/header.jpg" alt="主页照片" >
+        </header>
+
+        <!-- 采用凝胶布局 -->
+        <div class="inner">
+            <!-- container1代表一列内容 ，左内容区与右内容区交替放图片-->
+            <div class="container1">
+                <div class="container1_left">
+                    <a href="学生工作.html" target="_blank">
+                        <img src="images/work.jpg">
+                    </a>
+                </div>
+                <div class="container1_right">
+                    <span class="container1_title">学生工作</span>
+                    <p class="paragraph_font">
+                        这是我的学生工作板块，在这里展示了我平时在学校参与的学生社团工作，我选择了组织部和A股分析协会两个组织进行展示。
+                    </p>
+
+                    <div class="container1_button">
+                        <a href="学生工作.html" target="_blank">
+                            <button>学生工作</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container1">
+                <div class="container1_left">
+                    <span class="container1_title1">我的家乡</span>
+                    <p class="paragraph_font1">
+                        这是我的家乡板块，我来自河南省南阳市，它虽然只是一个小城但是对我来说意义非凡，是我从小到大成长的地方。在我眼里它无比美丽。
+                    </p>
+
+                    <div class="container1_button1">
+                        <a href="我的家乡.html" target="_blank">
+                            <button>我的家乡</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container1_right">
+                    <a href="我的家乡.html" target="_blank">
+                        <img src="images/hometown.jpg">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container1">
+                <div class="container1_left">
+                    <a href="我的爱好.html" target="_blank">
+                        <img src="images/hobby.jpg">
+                    </a>
+                </div>
+                <div class="container1_right">
+                    <span class="container1_title">我的爱好</span>
+                    <p class="paragraph_font">
+                        这是我的爱好板块
+                    </p>
+
+                    <div class="container1_button">
+                        <a href="我的爱好.html" target="_blank">
+                            <button>我的爱好</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚区 -->
+    <footer>
+        <!-- 页脚区的总容器 -->
+        <div class="footer-container">
+            <!-- 定义页脚区的左列 -->
+            <div class = "footer-col">
+                <div class="title">
+                    我的简介
+                </div>
+                <div class="footer-icon">
+                </div>
+                <p>
+                    我是来自大数据管理与应用+金融工程专业的一名大二学生，
+                    在学生工作中任工程学院分团委副书记、工程学院辩论队副队长、中南财经政法大学A股分析协会管理层；
+                    课外我也热衷于各种的比赛和体育活动参加，曾获得的部分奖项有：校级优秀学生干部； “工程杯”新生辩论赛决赛冠军；校篮球赛新生杯第三名；
+                    大创项目国家级立项；工程学院青年学习社优秀学员等，自入校以来，从各方面严格要求自己，注重综合素质的提高，在思想、学习、工作等各方面有较为突出的表现。
+                    在校期间积极参加各项活动并获得多项荣誉。在共青团组织活动中统筹协调各项工作，取得了优异的成绩，多次受到院领导和团员青年们的好评。
+                </p>
+
+            </div>
+
+            <!-- 页脚区的右列，与左列样式不同 -->
+            <div class = "footer-last-col">
+                <div class="title">
+                    联系方式
+                </div>
+                <p>
+                    如果你有问题想要联系我，或者想要了解我更多的信息，可以通过以下方式寻找到我：
+                </p>
+                <p>
+                    电话：17630677963
+                </p>
+                <p>
+                    QQ:1013849068
+                </p>
+                <p>
+                    邮箱:1013849068@qq.com
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,261 @@
+h1,h2,p,li,ul,a,img,body{
+    margin: 0;
+    padding: 0;
+    font-family: "宋体";
+}
+
+/* 鼠标移动到a连接上会改变，且a连接无下划线等修饰 */
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul,li{
+    height: 100%;
+}
+
+/* 定义凝胶布局 */
+.inner
+{
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* 定义导航栏的字体位置 */
+nav{
+    width: 100%;
+    background-color: rgb(13, 70, 13);
+    height: 80px;
+    /* 导航栏运用fixed定位，相对于浏览器页面永远固定 */
+    position: fixed;    
+    /* 因为导航栏使用了fixed定位，所以有可能被其他float元素遮挡，需要将其堆叠顺序提高，这样就不会被其他元素覆盖了 */
+    z-index: 999;
+}
+
+/* 导航栏的按钮右对齐 */
+nav ul{
+    text-align: right;
+}
+
+/* 导航栏选项 */
+nav ul li{
+    display: inline-block;
+    text-decoration: none; 
+    width: 120px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* 将a元素定义为与list块一样大，以此保证整个块都可做为链接按钮 */
+nav ul li a{
+    display: block; 
+    text-decoration: none;
+    text-align: center;
+    height: 100%;
+    line-height: 80px;
+    color: white;
+    font-size: 20px;
+}
+
+/* 导航栏的图标样式 */
+.logo{
+    display: inline;
+    float: left;
+    height: 100%;
+}
+
+/* 导航栏的欢迎语 */
+.Welcome{
+    line-height: 80px;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+/* 页眉图片，起隔断作用 */
+header{
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+
+/* 主内容区 */
+.main{
+    width: 100%;
+    background: darkkhaki;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+/* 定义正文容器样式 */
+.container1{
+    width: 100%;
+}
+
+/* 定义首页左边内容区的样式 */
+.container1_left{
+    height: 300px;
+    width: 50%;
+    display: inline-block;
+}
+
+/* 定义首页右边内容区的样式 */
+.container1_right{
+    float: right;
+    width: 50%;
+    height: 300px;
+}
+
+/* 定义首页正文中位于左内容区的题目样式 */
+.container1_title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    font-family: "华文行楷";
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+/* 定义首页正文中位于右内容区的题目样式 */
+.container1_title1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    color: white;
+    font-family: "华文行楷";
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+/* 定义首页正文中位于左边内容区的字体样式 */
+.paragraph_font{
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* 定义首页正文中位于右边内容区的字体样式 */
+.paragraph_font1{
+    font-size: 20px;
+    text-align: right;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* 定义左边的按钮块 */
+.container1_button{
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+/* 定义右边的按钮块 */
+.container1_button1{
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+/* 定义左边内容块内文字样式 */
+.container1_button1 button{
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+}
+
+/* 定义右边内容块内文字样式 */
+.container1_button button{
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+}
+
+/* 定义页脚区样式 */
+footer{
+    background-color: rgb(34, 103, 112);
+    position: relative;
+    width: 100%;
+}
+
+/* 定义页脚区总容器 */
+.footer-container{
+    background-color: rgb(34, 103, 112);
+    position: relative;
+    /* 遮挡住溢出的元素 */
+    overflow:auto;
+    /* 也是一种凝胶布局 */
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 定义页脚区每一列的主标题 */
+.title{
+    font-family: 黑体;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* 定义页脚的左列 */
+.footer-col{
+    position: relative;
+    width: 700px;
+    margin-right: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: left;
+}
+
+/* 定义页脚的右列，与第一列不同的是右外边距不同 */
+.footer-last-col{
+    position: relative;
+    width: 400px;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: left;
+}
+
+/* 插入个人头像 */
+.footer-icon{
+    width: 120px;
+    height: 180px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+    background-image: url(../images/footericon.jpg);
+}
+
+/* 个人简介区文字内容样式 */
+.footer-col p{
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    line-height: 20px;
+    margin-bottom: 18px;
+}
+
+/* 联系方式区文字内容样式 */
+.footer-last-col p{
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    line-height: 20px;
+    margin-bottom: 18px;
+}
+

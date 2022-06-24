@@ -1,0 +1,83 @@
+/* 设置总的大容器块，用来存储各个内容块 */
+.container{
+    width: 1400px;
+    overflow:auto;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+/* 设置左边两块存放内容的容器 */
+.container_block{
+    position: relative;
+    width: 370px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    /* padding-left: 20px; */
+    float: left;
+    background-color: white;
+    padding: 5px;
+}
+
+/* 设置最右边容器的样式，用来保证边距合适 */
+.container_block_last{
+    position: relative;
+    width: 370px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    float: right;
+    background-color:white;
+    padding: 5px;   
+}
+
+/* 设置内容块标题块的样式 */
+.container_block_title{
+    position: relative;
+    width: 370px;
+    height: 40px;
+}
+
+.container_block_title h2{
+    text-align: center;
+    font-family: 华文行楷;
+    font-size: 30px;
+    color: black;
+}
+
+/* 设置图片块的样式 */
+.container_block_up{
+    position: relative;
+    width: 370px;
+    height: 278px;
+}
+
+/* 设置文字块的样式 */
+.container_block_down{
+    position: relative;
+    width: 370px;
+    height: 150px;
+    background-color: white;
+    padding-top: 10px;
+}
+
+/* 设置文字块中的段落样式 */
+.container_block_down p{
+    text-align: left;
+    text-indent: 2em;
+}
+
+/* 设置表格属性 */
+table {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+  
+  /* 设置单元格属性 */
+  th,td {
+    border: 2px solid black;
+    padding: 5px;
+  }

@@ -1,0 +1,43 @@
+/* 设置学生工作界面左边的块元素样式 */
+.container_work_block{
+    position: relative;
+    width: 550px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    float: left;
+    background-color: white;
+    padding: 5px;
+}
+
+/* 设置右边块元素的样式，防止右外边距出错 */
+.container_work_block_last{
+    position: relative;
+    width: 550px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    float: right;
+    background-color: white;
+    padding: 5px;
+}
+
+/* 块元素再分为三小块定义 */
+.container_work_block_up{
+    position: relative;
+    width:  550px;
+    height: 370px;
+    background-color: white;
+}
+
+.container_work_block_down{
+    position: relative;
+    width: 550px;
+    height: 150px;
+    padding-top: 10px;
+}
+
+.container_work_block_down p{
+    text-indent: 2em;
+    text-align: left;
+}
